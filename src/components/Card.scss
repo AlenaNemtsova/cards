@@ -2,9 +2,10 @@ $mainColor: rgb(63, 160, 94);
 
 .card {
     width: 20%;
-    margin: 10px;
+    margin-top: 50px;
     border: 0.5px solid grey;
-    text-align: left;   
+    text-align: left;
+    
 }
 
 .card img {
@@ -43,4 +44,5 @@ $mainColor: rgb(63, 160, 94);
 
 .selected {
     border: 2px solid orange;
+    
 }

@@ -1,17 +1,17 @@
 import './App.css';
 import CardList from './components/CardList';
 import Button from './components/Button';
+import React from 'react';
 
 
 function App() {
   return (
-    <div className="App">
-      <CardList></CardList>
-
+    <React.Fragment>
+      <div className="App">
+        <CardList></CardList>
+      </div>
       <Button></Button>
-      
-      
-    </div>
+    </React.Fragment>
   );
 }
 

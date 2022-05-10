@@ -2,9 +2,9 @@
 function LogInForm (props) {
     return (
         <form>
-            <input placeholder="Введите логин"/>
+            <input name={props.isAutorized} placeholder="Введите логин"/>
             <input placeholder="Введите пароль"/>
-            <button autorized={props.isAutorized}>Зарегистрироваться</button>
+            <button>Зарегистрироваться</button>
         </form>
         );
 }

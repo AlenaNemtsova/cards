@@ -3,10 +3,20 @@ import Card from './Card';
 
 class CardList extends React.Component {
     render() {
+        const {shoes} = this.props;
+
         return (
             <React.Fragment>
+            {shoes.map( (item, index) => {
+                return (
+                    <Card key={index} {...item} /> //добавляем key; используем спред ... потому что аттрибуты <Card> совпадают с ключами объекта, т. е. title={item.title} и т. д., значит можем записать просто {...item}
+                )
+            }
+
+            )}
             
-                <Card
+                {/* все атрибуты Card перенесли в json и отрисовали с помощью map
+                    <Card 
                     title="Зимние ботинки"
                     price={99}
                     description="Такие только у нас"
@@ -28,7 +38,7 @@ class CardList extends React.Component {
                     description="Теперь и в черном цвете"
                     imgLink="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3um-PWxYFmKlYLvP3ARDBaXly71vnwh-IjQ&usqp=CAU"
                     isSelected={false} //невыделенная карточка
-                />
+                /> */}
             
             </React.Fragment>
         );

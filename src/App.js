@@ -7,6 +7,7 @@ import LogIn from './components/LogIn'
 
 const shoes = [
   {
+
   title: "Зимние ботинки",
   price: 99,
   description: "Такие только у нас",

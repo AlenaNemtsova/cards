@@ -7,7 +7,7 @@ import LogIn from './components/LogIn'
 
 const shoes = [
   {
-
+  id: "1",
   title: "Зимние ботинки",
   price: 99,
   description: "Такие только у нас",
@@ -16,6 +16,7 @@ const shoes = [
 },
 
 {
+  id: "2",
   title: "Пляжные тапки",
   price: 23,
   description: "Надеюсь, пригодятся",
@@ -24,6 +25,7 @@ const shoes = [
 },
 
 {
+  id: "3",
   title: "Праздничные туфли",
   price: 85,
   description: "Теперь и в черном цвете",

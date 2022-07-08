@@ -7,21 +7,28 @@ class CardList extends React.Component {
 
         return (
             <React.Fragment>
-                {/* {shoes.map((item, index) => {
+                {/* {shoes.map((item, id) => {
                     return (
-                        <Card key={index} {...item} /> //добавляем key; используем спред ... потому что аттрибуты <Card> совпадают с ключами объекта, т. е. title={item.title} и т. д., значит можем записать просто {...item}
+                        <Card key={item.id} {...item} /> //добавляем key; используем спред ... потому что аттрибуты <Card> совпадают с ключами объекта, т. е. title={item.title} и т. д., значит можем записать просто {...item}
                     )
                 }
                 )} */}
 
-                {shoes.filter((item) => {
+                {/* теперь устанавливаем фильтр - выводим только те карточки, цена которых не превышает заданную (30$) */}
+
+                {/* {shoes.filter((item) => {
                     return item.price < 30;
                 }).map((item) => {
                     return (
-                        <Card {...item} />
+                        <Card key={item.id} {...item} />
                     )
                 })
                 }
+                 */}
+                
+                {/* теперь более короткая запись, без return и скобок */}
+
+                {shoes.filter((item) => item.price < 30).map((item) => <Card key={item.id} {...item} />)}
 
             </React.Fragment>
         );
